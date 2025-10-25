@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artem - frontend developer </title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <canvas id="bg-canvas" aria-hidden="true"></canvas>
+        <header class="nav">
+            <div class="brand">Artem</div>
+            <nav>
+                <a href="#about">О себе</a>
+                <a href="#craft">Процесс</a>
+                <a href="#contact" class="cta">Связаться</a>
+            </nav>
+        </header>
+        <section class="hero" id="home" role="region" arial-label="Главный экран">
+            <div class="hero-inner">
+                <h1 class="headline">
+                    Прямо сейчас - <span class="glow">путь</span><br /> к тому, что бы создавать интерфейсы как искувство
+                </h1>
+                <p class="sub">
+                    Я - Артем. я иследую движение, свет и взаимодействие. Пока нет кейсов - есть подход и чувство формы.
+                </p>
+                <div class="actions">
+                    <a href="#contact" class="btn primary">Контактные данные</a>
+                    <a href="#craft" class="btn ghost">Как я работаю</a>
+                </div> 
+                <div class="pulse-note">
+                    Сейчас - начало.  Но дизайн говорит за меня.
+                </div>
+            </div>
+            <div class="mouse-hint">Наведите мышь→</div>
+        </section>
+        <section class="panel" id="about">
+            <div class="container">
+                <h2 class="panel-title">О себе</h2> 
+                <p class="panel-lead">
+                     Я создаю интерфейсы с фокусом на движение и ощущения. Люблю чистый код, эксперименты с анимацией и минималистичные интерфейсы с характером.
+                </p>
+                <ul class="skills">
+                    <li><strong>HTML / CSS / JS</strong><span>— уверенно</span></li>
+                    <li><strong>Анимации</strong><span>— GSAP / canvas</span></li>
+                    <li><strong>UX / Motion</strong><span>— мыслю как дизайнер</span></li>
+                    <li><strong>WebGL (начально)</strong><span>— интерес и эксперименты</span></li>
+                </ul>    
+            </div>
+        </section>
+        <section class="panel dark" id="craft">
+            <div class="container split">
+                <div class="col">
+                    <h2 class="panel-title">Как я работаю</h2>
+                    <ol class="process">
+                        <li><strong>Исследую</strong><span>— цели, контекст, референсы</span></li>
+                        <li><strong>Прототипирую</strong><span>— быстрые взаимодействия</span></li>
+                        <li><strong>Делаю анимации</strong><span>— внимание к деталям</span></li>
+                        <li><strong>Оптимизирую</strong><span>— производительность и доступность</span></li>
+                    </ol>
+                </div>
+                <div class="card-cta">
+                    <a href="mailto:slobodanukartem839@gmail.com" class="btn primary">Написать мне</a>
+                </div>
+            </div>
+        </section>
+        <section class="panel contact" id="contact">
+            <div class="container">
+                <h2 class="panel-title">Давайте обсудим</h2>
+                <p class="panel-lead">Готов обсудить стажировки, джуниор/ид проекты и любые интересные задачи - я быстро учусь и люблю сложные задачи.</p>
+                <div class="contact-grid">
+                    <a class="contact-card" href="mailto:slobodanukartem839@gmail.com">
+                        <div class="icon">✉️</div>
+                        <div>
+                            <div class="label">Email</div>
+                            <div class="value">slobodanukartem839@gmail.com</div>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="https://github.com" target="_blank" rel="noopener">
+                        <div class="icon">🐙</div>
+                        <div>
+                            <div class="label">GitHub</div>
+                            <div class="value">github.com/slobodanukartem839-web</div>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="https://t.me" target="_blank" rel="noopener">
+                        <div class="icon">💬</div>
+                        <div>
+                            <div class="label">Telegram</div>
+                            <div class="value">@xanetry</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div>© <span id="year"></span>Артем - начало пути. Сделано с вниманием.</div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
